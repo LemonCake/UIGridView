@@ -1,0 +1,13 @@
+UIGridView is a simple UI class that lays out views you provided in a grid like fashion.
+
+Usage
+-----
+Interface is a delegate pattern where it requires a few simple methods to be implemented:
+
+- (NSInteger)numberOfColumnsInGridView:(UIGridView *)gridView; // specifies number of columns desired
+- (NSInteger)numberOfViewsInGridView:(UIGridView *)gridView; // specifies number of views you want to display
+- (UIView *)gridView:(UIGridView *)gridView viewForIndex:(NSInteger)index; // return the view you'd like to display at a specific index
+
+Unsupported
+-----------
+- Customizable view placement within grid blocks (center align, left align...etc.)
